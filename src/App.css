@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  background: #f3f3ff;
+  width: 100%;
+  height: 100vh;
+}
+
+.circle {
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(to bottom, #fa39ad 40%, #fe6c4c 50%);
+  filter: blur(120px);
+}
+
+.red {
+  background: #fe624d;
+  border: 2px solid #ee5e4b;
+}
+
+.yellow {
+  background: #ffc432;
+  border: 2px solid #f2bd3a;
+}
+
+.green {
+  background: #5bde47;
+  border: 2px solid #5fc651;
+}
+
+.app-color-yellow {
+  color: #ffa41d;
+}
+
+.app-color-black {
+  color: #292b48;
+}
+
+.app-color-gray {
+  color: #877f95;
+}
+
+.app-color-lavendar {
+  color: #9ea1cf;
+}
+
+.app-color-pink {
+  color: #fb28cd;
+}
+
+.app-bg-lavendar {
+  background: #d5d7ff;
+}
+
+.app-bg-light-white {
+  background: #f7f8ff;
+}
+
+.app-bg-light-white-2 {
+  background: #eff2fc;
+}
+
+.app-color-dribbble {
+  color: #e04b85;
+}
+
+.app-shadow {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.03);
+}
+
+.app-title {
+  background: linear-gradient(45deg, #fb28cd, #7c65d7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+span.active {
+  position: relative;
+  color: #292b48;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+span.active::after {
+  content: "";
+  width: 200%;
+  height: 2px;
+  background: #292b48;
+  position: absolute;
+  bottom: -20px;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+}
+
+.switch-bg {
+  height: 24px;
+  width: 44px;
+  background: #fb28cd;
+  border-radius: 15px;
+}
+
+.switch-indicator {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #fb28cd;
+  border: 5px solid white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s ease-out;
+}
+
+.switch-checkbox:checked ~ .switch-indicator {
+  transform: translateX(100%);
+}
+
+.switch-checkbox:checked ~ .switch-bg {
+  background: #e9ecfa;
+}
