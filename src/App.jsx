@@ -4,10 +4,11 @@ import { IoMdSearch } from "react-icons/io";
 import axios from "axios";
 
 const App = () => {
+  const apiKey = "";
   const [data, setData] = useState(null);
   const [location, setLocation] = useState("Ciamis");
   useEffect(() => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=3e150c61886666443c3267d56d507b0e&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid={apiKey}&units=metric`;
 
     axios.get(url).then((res) => {
       setData(res.data);
