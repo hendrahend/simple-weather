@@ -6,20 +6,20 @@ import { ImSpinner8 } from "react-icons/im";
 import axios from "axios";
 
 const App = () => {
-  const apiKey = "";
+  const apiKey = "3e150c61886666443c3267d56d507b0e";
   const [data, setData] = useState(null);
   const [location, setLocation] = useState("London");
-  const [inputData, setInputData] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const date = new Date();
 
   const handleInput = (a) => {
-    setInputData(a.target.value);
+    setInputValue(a.target.value);
   };
 
   const handleSubmit = (a) => {
-    console.log(inputData);
-    if (inputData !== "") {
-      setLocation(inputData);
+    console.log(inputValue);
+    if (inputValue !== "") {
+      setLocation(inputValue);
     }
     const input = document.querySelector("input");
     input.value = "";
@@ -34,15 +34,6 @@ const App = () => {
     });
   }, [location]);
 
-  if (!data) {
-    return (
-      <div className="place-items-center">
-        <div className="">
-          <ImSpinner8 className="text-5xl animate-spin" />
-        </div>
-      </div>
-    );
-  }
   let icon;
   switch (data.weather[0].main) {
     case "Clouds":
