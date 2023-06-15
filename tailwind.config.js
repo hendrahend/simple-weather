@@ -2,9 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      primary: "Poppins",
-    },
     extend: {
       backgroundImage: {
         gradientBg: "url('/src/assets/img/cloud.jpg')",
