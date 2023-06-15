@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoMdSunny, IoMdRainy, IoMdThunderstorm, IoMdCloudy, IoMdSnow, IoMdSearch } from "react-icons/io";
+import { IoMdSunny, IoMdRainy, IoMdThunderstorm, IoMdCloudy, IoMdSearch } from "react-icons/io";
 import { BsCloudHaze2Fill, BsCloudDrizzleFill, BsEye, BsWater, BsWind, BsThermometer } from "react-icons/bs";
 import { TbTemperatureCelsius } from "react-icons/tb";
 import { ImSpinner8 } from "react-icons/im";
